@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: food-app
-  AZURE_WEBAPP_PACKAGE_PATH: "."
+  AZURE_WEBAPP_NAME: test-food-app
+  AZURE_WEBAPP_PACKAGE_PATH: "build"
   NODE_VERSION: "14.x"
 
 jobs:
