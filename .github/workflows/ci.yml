@@ -13,7 +13,6 @@ env:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    environment: dev
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js ${{ env.NODE_VERSION }}
@@ -29,6 +28,5 @@ jobs:
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       
